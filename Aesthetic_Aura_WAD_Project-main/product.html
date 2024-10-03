@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="product.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand  mx-auto">
+            <h3 class="mb-0 fw-bold text-white text-center">Aesthetic Aura</span></h3>
+        </a>
+
+           
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-4  ">
+                        <li class="nav-item active fw-bold">
+                            <a class="nav-link text-white " href="./product.html">Top Brands</a>
+                        </li>
+                        <li class="nav-item active fw-bold">
+                            <a class="nav-link text-white" href="./morebrands.html">More Brands</a>
+                        </li>
+                        <li class="nav-item active fw-bold">
+                            <a class="nav-link text-white" href="./order.html">Online Orders</a>
+                        </li>
+                        <li class="nav-item active fw-bold">
+                            <a class="nav-link text-white" href="./contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item active fw-bold">
+                            <a class="nav-link text-white" href="./admin.html">Admin</a>
+                        </li>
+                    </ul>
+                </div>     
+    </div>
+   </nav>
+<!--product-->
+
+<section class="" id="landingPageContent" >
+  <div class="img-fluid " style="background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+      <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.5);">
+          <!-- text-content -->
+              <div class="row">
+                  <div class="">
+                      <div class="my-1 my-md-5">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-12 col-md-6 text-white">
+                                      <div class="my-2 text-center text-md-start mt-md-2">
+                                          <h1>Premium<span class="span-text">Quality</span></h1>
+                                          <h1  class="my-1">Branded<span class="span-text"> Clothes</span></h1>
+                                          <h1 class="my-1">At<span class="span-text">Low Price</span></h1>
+                                          <h1 class="my-1">Grab<span class="span-text">Online Orders</span></h1>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-6">
+                                      <div class="text-center ">
+                                          <img src="img5.jpg" class="img-fluid  w-50" alt="">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+      </div>
+  </div>
+</section>
+
+<!-- landing-content-show-products -->
+
+<section id="landing-content-show-products">
+  <div class="my-5">
+      <div class="container">
+          <div class="row">
+              <div class="text-center "> 
+                  <h1>Some of our <span class="span-text">Best</span> Brands</h1>
+              </div>
+          </div>
+      </div>
+      <div class="container mt-md-5 mt-2">
+          <div class="row justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-3  row-cols-xxl-4 ">
+              <div class="col-md-5  col-lg-4 col-12 mb-3">
+                  <div class="card mx-auto" style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="img1.jpg" class="card-img-top card-image" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title"  id="product-name-5">Allen Solly</h5>
+                        <p class="card-subtitle "  id="product-price-5">1500</p>
+                        <p class="card-text">The brand emphasizes comfort without compromising on style, making it a popular choice for those seeking to express their individuality while remaining polished.</p>
+                        <div class="text-center">
+                           <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount(5)">-</button>
+                          <input type="text" class="form-control text-center" id="product-count-5" value="1" readonly>
+                          <button class="btn btn-outline-secondary" type="button" onclick="increaseCount(5)">+</button>
+                      </div> <a  class="btn btn-design btn-danger" data-product-id="5" onclick="placeOrder(5)">Place order</a>
+                        </div> 
+</div>
+                    </div>
+              </div> 
+              <div class="col-md-5  col-lg-4  col-12 mb-3">
+                  <div class="card mx-auto " style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="img2.jpg" class=" img-fluid " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title " id="product-name-9">ZARA</h5>
+                          <p class="card-subtitle " id="product-price-9">4000</p>
+                       
+                        <p class="card-text"> Men's wear includes sharp suits, trendy casual wear, and essential basics that blend comfort with modern aesthetics.</p>
+                         
+                       <div class="text-center"> 
+                          <div class="input-group mb-3 ">
+                              <button class="btn btn-outline-secondary mt-2" type="button" onclick="decreaseCount(9)">-</button>
+                              <input type="text" class="form-control text-center mt-2" id="product-count-9" value="1" readonly>
+                              <button class="btn btn-outline-secondary mt-2" type="button" onclick="increaseCount(9)">+</button>
+                          </div><a href="#" class="btn btn-design btn-danger"  data-product-id="9" onclick="placeOrder(9)">Place order</a>
+                       </div> 
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-5  col-lg-4 col-12 mb-3">
+                  <div class="card mx-auto" style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="img5.jpg" class=" img-fluid card-img card-image " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title" id="product-name-10">Peter England</h3>
+                        <p class="card-subtitle " id="product-price-10">3000</p>
+                       
+                        <p class="card-text" > ter England combines quality fabrics with trendy designs, making it a favorite for young professionals and fashion-conscious individuals alike.</p>
+                        
+                        <div class="text-center">
+                          <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount(10)">-</button>
+                              <input type="text" class="form-control text-center" id="product-count-10" value="1" readonly>
+                              <button class="btn btn-outline-secondary" type="button" onclick="increaseCount(10)">+</button>
+                          </div> <a href="#" class="btn btn-design btn-danger"  data-product-id="10" onclick="placeOrder(10)">Place order</a>
+                        </div></div>
+                    </div>
+              </div>
+              <div class="col-md-5  col-lg-4 col-12 mb-3">
+                  <div class="card mx-auto" style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="cp.jpg" class=" img-fluid card-img card-image " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title" id="product-name-11">Classic Polo</h3>
+                        <p class="card-subtitle " id="product-price-11">3000</p>
+                       
+                        <p class="card-text" >classic polos offer comfort and ease of movement, making them ideal for warm weather or layering under a jacket</p>
+                        
+                        <div class="text-center">
+                          <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount(11)">-</button>
+                              <input type="text" class="form-control text-center" id="product-count-10" value="1" readonly>
+                              <button class="btn btn-outline-secondary" type="button" onclick="increaseCount(11)">+</button>
+                          </div> <a href="#" class="btn btn-design btn-danger"  data-product-id="11" onclick="placeOrder(11)">Place order</a>
+                        </div></div>
+                    </div>
+              </div>
+              <div class="col-md-5  col-lg-4 col-12 mb-3">
+                  <div class="card mx-auto" style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="max.jpg" class=" img-fluid card-img card-image " alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title" id="product-name-12">Max Fashion</h3>
+                        <p class="card-subtitle " id="product-price-12">1500</p>
+                       
+                        <p class="card-text " > Max is recognized for its commitment to quality and value, with collections that reflect current fashion trends while being accessible to a broad audience.</p>
+                        
+                        <div class="text-center ">
+                          <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary " type="button" onclick="decreaseCount(12)">-</button>
+                              <input type="text" class="form-control text-center" id="product-count-12" value="1" readonly>
+                              <button class="btn btn-outline-secondary " type="button" onclick="increaseCount(12)">+</button>
+                          </div> <a href="#" class="btn btn-design btn-danger "  data-product-id="12" onclick="placeOrder(12)">Place order</a>
+                        </div></div>
+                    </div>
+              </div>
+            
+              <div class="col-md-5  col-lg-4 col-12 mb-3">
+                  <div class="card mx-auto" style="width: 18rem;">
+                      <div class="text-center">
+                          <img src="hm.jpg" class="card-img-top card-image" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title" id="product-name-8">H&M</h3>
+                        <p class="card-subtitle "  id="product-price-8">50</p>
+                        <p class="card-text">A fast-fashion brand, H&M provides trendy clothing at affordable prices for men, women, and children. Their collections are frequently updated to reflect the latest styles.</p>
+                        <div class="text-center"> 
+                          <div class="input-group mb-3">
+                              <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount(8)">-</button>
+                              <input type="text" class="form-control text-center" id="product-count-8" value="1" readonly>
+                              <button class="btn btn-outline-secondary" type="button" onclick="increaseCount(8)">+</button>
+                          </div><a  class="btn btn-design btn-danger " data-product-id="8" onclick="placeOrder(8)">Place order</a>
+                        </div> 
+</div>
+                    </div>
+              </div>
+            
+          </div>
+          <div class="text-center"> <a href="./morebrands.html" class="btn btn-design btn-danger">More Brands</a>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+ 
+<script>
+   
+    function increaseCount(productId) {
+      let countElement = document.getElementById('product-count-' + productId);
+      let count = parseInt(countElement.value);
+      countElement.value = count + 1;
+    }
+  
+ 
+    function decreaseCount(productId) {
+      let countElement = document.getElementById('product-count-' + productId);
+      let count = parseInt(countElement.value);
+      if (count > 1) {
+        countElement.value = count - 1;
+      }
+    }
+  
+
+    function placeOrder(productId) {
+    
+      let productName = document.getElementById('product-name-' + productId).textContent;
+      let productPrice = document.getElementById('product-price-' + productId).textContent;
+      let productCount = document.getElementById('product-count-' + productId).value;
+  
+      alert(`Order placed for ${productName}\nQuantity: ${productCount}\nTotal Price: ${productPrice * productCount}`);
+    }
+  </script>
+  
+
+    <!-- footer -->
+<section class="my-5">
+  <footer class="footer p-3 bg-secondary  text-white "> 
+      <div class="container-fluid"> 
+          <div class="row"> 
+              <div class="col-md-5 col"> 
+                <img src="./images/image.png" style="height:70px;">
+                  
+                  <p>Aesthetic Aura Gives Style is a way to say who you are without having to speak . Aesthetic is not just about what looks good, but what feels right </p>
+              </div> 
+              <div class="col-md-7 pt-5">
+                <div class="row"><div class="col-md-4 "> 
+                  <h5>Our Brands</h5> 
+                  <ul class="list-unstyled"> 
+                      <li>H&M</li> 
+                      <li>Zara</li> 
+                      <li>Louis Philippe</li> 
+                      <li>Peter England</li>
+                      <li></li>
+                  </ul> 
+               </div> 
+            <div class="col-md-4"> 
+                <h5>NEED HELP</h5> 
+                <ul class="list-unstyled"> 
+                    <li><a href="#">Contact Us</a></li> 
+                    <li><a href="#">Track Order</a></li>
+                    <li>Return & Refunds</li> 
+                    <li>COD Available</li> 
+                    <li>30 Days Easy Returns</li>
+                 
+                </ul> 
+            </div> 
+            <div class="col-md-4">
+              <h5>Terms</h5>
+              <ul class="list-unstyled">
+                <li>Shipping Terms</li>
+                <li>Terms and Condition</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+               
+              </ul>
+            </div></div>
+              </div>
+                   
+              <div class="col-md-3"> 
+                  <h5>Follow Us</h5> 
+                  <ul class="list-inline footer-links fs-2"> 
+                      <li class="list-inline-item"> 
+                        <a href="#">
+                          <i class="bi bi-instagram footer-links-color"></i>
+                        </a> 
+                        </li> 
+                      <li class="list-inline-item"> 
+                        <a href="#"> 
+                          <i class="bi bi-snapchat footer-links-color"></i>
+                        </a> 
+                      </li> 
+                      <li class="list-inline-item"> 
+                        <a href="#"> 
+                          <i class="bi bi-facebook footer-links-color"></i>
+                        </a> 
+                      </li> 
+                      <li class="list-inline-item"> 
+                        <a href="#"> 
+                          <i class="bi bi-threads-fill footer-links-color"></i>
+                        </a> 
+                      </li> 
+                  </ul> 
+              </div> 
+          </div> 
+          <hr> 
+          <div class="row"> 
+              <div class="col-md-4 text-center"> 
+                  <p class="">Aesthetic Aura @ 2024</p> 
+              </div> 
+              <div class="col-md-6 text-end"> 
+                  <ul class="list-inline footer-links"> 
+                      <li class="list-inline-item"> 
+                          <a href="#" class="text-white"> 
+                              Privacy Policy 
+                          </a> 
+                      </li> 
+                      <li class="list-inline-item"> 
+                          <a href="#" class="text-white"> 
+                              Terms of Service 
+                          </a> 
+                      </li> 
+                      <li class="list-inline-item"> 
+                          <a href="#" class="text-white"> 
+                              Sitemap 
+                          </a> 
+                      </li> 
+                  </ul> 
+              </div> 
+          </div> 
+      </div> 
+  </footer> 
+</section>
+  </body>
+</html>

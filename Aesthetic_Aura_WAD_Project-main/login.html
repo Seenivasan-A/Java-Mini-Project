@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Signup and Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #9e91cc;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-container {
+            padding: 30px;
+            background-color: #8e8fda; 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .btn-primary {
+            background-color: #0056b3; 
+            border-color: #0056b3; 
+        }
+        .btn-primary:hover {
+            background-color: #004494; 
+            border-color: #004494; 
+        }
+        .form-label {
+            color: #333; 
+        }
+        .form-control {
+            border: 1px solid #ccc;
+        }
+        .form-control:focus {
+            border-color: #0056b3; 
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        }
+        .bg-light {
+            background-color: #e7f3fe; 
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #0056b3; 
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body class="bg-dark text-dark">
+
+    <div class="container">
+       
+        <div id="registration" class="form-container">
+            <h2 class="text-center mb-4">Customer Signup</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="goToProductPage()">Signup</button>
+            </form>
+            <p class="text-center mt-3">Already have an account? <span class="toggle-btn" onclick="toggleForms()">Login</span></p>
+        </div>
+
+       
+        <div id="login" class="form-container" style="display: none;">
+            <h2 class="text-center mb-4">Customer Login</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="login-email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="login-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="goToProductPage()">Login</button>
+            </form>
+            <p class="text-center mt-3">Don't have an account? <span class="toggle-btn" onclick="toggleForms()">Signup</span></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function toggleForms() {
+            const registrationForm = document.getElementById('registration');
+            const loginForm = document.getElementById('login');
+            if (registrationForm.style.display === 'none') {
+                registrationForm.style.display = 'block';
+                loginForm.style.display = 'none';
+            } else {
+                registrationForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+        }
+
+        function goToProductPage() {
+            window.location.href = "product.html";
+        }
+    </script>
+</body>
+</html>
